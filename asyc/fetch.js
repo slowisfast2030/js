@@ -15,10 +15,13 @@ fetch(url)
 
 const loadData = async () => {
     try{
-        
-
+        const url = 'https://www.baidu.com';
+        const res = await fetch(url);
+        const data = await res.json();
+        console.log(data);
     }catch(err) {
-
+        console.error(err)
     }
-
 }
+
+loadData()

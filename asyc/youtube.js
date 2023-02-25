@@ -1,5 +1,3 @@
-// promise可以保证命令执行的order
-
 function makeRequest(location) {
     return new Promise((resolve, reject) => {
         console.log(`Making Request to ${location}`)

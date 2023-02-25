@@ -1,3 +1,6 @@
+// fetch的例子比youtube的例子好很多
+// 如无必要，勿增实体
+
 const url = 'https://www.baidu.com';
 fetch(url)
     .then(res => {

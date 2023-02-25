@@ -18,4 +18,8 @@ function processRequest(response) {
     })
 }
 
-makeRequest('Google')
+makeRequest('Google').then(response => {
+    console.log('Response Received')
+    return processRequest(response)
+})
+
